@@ -170,3 +170,6 @@ noremap <leader>f :Autoformat<CR>
 " Easymotion settings
 let g:EasyMotion_smartcase = 1
 
+" Easy sourcecode navigation
+" with ctags
+set tags=.git/tags

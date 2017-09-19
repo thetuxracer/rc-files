@@ -1,0 +1,15 @@
+[user]
+	email = 
+	name = Kaustubh Padegaonkar
+[push]
+	default = simple
+[init]
+	templatedir = ~/.git_template
+[alias]
+	ctags = !.git/hooks/ctags
+[core]
+	editor = vim
+[merge]
+	tool = meld
+[branch]
+	autosetuprebase = always
