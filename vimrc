@@ -4,9 +4,6 @@ set nocompatible
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
-" TODO: Load plugins here (pathogen or vundle)
-
-
 " For plugins to load correctly
 filetype plugin indent on
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -118,8 +115,6 @@ inoremap <F1> <ESC>:set invfullscreen<CR>a
 nnoremap <F1> :set invfullscreen<CR>
 vnoremap <F1> :set invfullscreen<CR>
 
-" Textmate holdouts
-
 " Formatting
 map <leader>q gqip
 set cursorline
@@ -136,8 +131,6 @@ set t_Co=256
 set background=dark
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
-" put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
-" in ~/.vim/colors/ and uncomment:
 colorscheme solarized
 let g:airline_theme='solarized'
 
@@ -173,3 +166,12 @@ let g:EasyMotion_smartcase = 1
 " Easy sourcecode navigation
 " with ctags
 set tags=.git/tags
+
+" NerdCommenter
+" settings
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
